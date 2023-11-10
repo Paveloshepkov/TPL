@@ -1,0 +1,19 @@
+// states
+q0 q1
+// startState
+q0
+// endState
+q0
+// alphabet
+0 1
+// stackAlphabet
+a x
+// startString
+x
+// rules
+q0 0 a = q0 aa
+q0 0 x = q0 ax
+q0 1 a = q1 ε
+q0 ε x = q0 ε
+q1 1 a = q1 ε
+q1 ε x = q0 ε
